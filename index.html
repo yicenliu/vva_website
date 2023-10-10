@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name | Home</title>
+    <title>Home</title>
     <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
     <style>
         body {
-            background: #f4f6f3;
+            background: #b1ccf5;
             font-family: 'Ibarra Real Nova', sans-serif;
             line-height: 1.4;
         }
@@ -51,20 +51,9 @@
             font-weight: bold;
         }
 
-        .exp-entry {
-            margin-bottom: 60px;
-        }
-
         section {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-        }
-
-        .edu-entry, .exp-entry {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
+            margin-top: 80px;
+            padding: 50px;
         }
 
         h2 {
@@ -74,35 +63,48 @@
             margin-bottom: 20px;
         }
 
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .nav {
-                flex-wrap: wrap;
-                justify-content: space-between;
-            }
+        p {
+            margin-bottom: 15px;
+        }
+        
+        .greeting {
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh; 
+            font-size: 2rem;
+            font-weight: bold;
+        }
 
-            .nav__logo, .nav__elements {
+        .intro-box{
+            background-color: rgba(53, 92, 216, 0.5);
+            color: #fff;
+            padding: 15px;
+            border-radius: 10px; 
+            max-width: 800px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .intro {
+            font-size: 1rem;
+            margin: 0;
+        }
+
+        @media (max-width: 768px){
+            .flex-container {
+                flex-direction: column;
+            }
+            .contact-text, .contact-image {
                 width: 100%;
-                text-align: center;
             }
-
-            section {
-                padding-left: 20px;
-                padding-right: 20px;
-            }
-
-            h2 {
-                font-size: 24px;
-            }
-
-            h3 {
-                font-size: 20px;
-            }
-
-            p, li {
-                font-size: 16px;
+            .portrait{
+                max-width: 300px;
+                margin: auto;
             }
         }
+
     </style>
 </head>
 <body>
@@ -111,53 +113,17 @@
             <span>Yicen</span> <span>Liu</span>
         </div>
         <div class="nav__elements">
-            <a href="home.html" class="nav-link">Home</a>
-            <a href="#education" class="nav-link">Education</a>
-            <a href="#experience" class="nav-link">Experience</a>
-            <a href="contact.html" class="nav-link">Contact Me</a>
-            <a href="projects.html" class="nav-link">Projects</a>
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="experience/" class="nav-link">Experience</a>
+            <a href="projects/" class="nav-link">Projects</a>
+            <a href="contact/" class="nav-link">Contact Me</a>
         </div>
-    </nav>
-    <section id="education">
-        <h2>Education</h2>
-        <div class="edu-entry">
-            <h3><strong>Northeastern University</strong> <span>(Expected May 2025)</span></h3>
-            <p>Seattle, WA</p>
-            <p>Master of Science: Computer Science</p>
-        </div>
-        <div class="edu-entry">
-            <h3><strong>Columbia University</strong> <span>(Dec. 2022)</span></h3>
-            <p>New York, NY</p>
-            <p>Master of Education: International Education Policy Analysis</p>
-        </div>
-        <div class="edu-entry">
-            <h3><strong>University of Wisconsin Madison</strong> <span>(May 2020)</span></h3>
-            <p>Wisconsin, WI</p>
-            <p>JBA & B.S.: Strategic Communication & Global Education Policy</p>
+    </nav>    
+    <section>
+        <p class="greeting">Hello, call me Vivian!</p>
+        <div class="intro-box">
+            <p class="intro">Navigating the realms of Journalism, Education, and Research, I carve out stories, craft educational experiences, and delve into in-depth analyses. As a Software Engineer, I weave codes to solve complex problems, while being a devoted cat lover, I find joy and peace in the subtle purrs and gentle cuddles of my feline friends.</p>
         </div>
     </section>    
-    <section id="experience">
-        <h2>Experience</h2>
-        <div class="exp-entry">
-            <h3><strong>Website Developer</strong></h3>
-            <p><em>WISCAP</em> Madison, WI</p>
-            <ul>
-                <li>Performed regular maintenance and security updates on a Linux-based platform to ensure post-launch reliability</li>
-                <li>Developed responsive web pages using HTML and Bootstrap, with A/B testing for continuous optimization
-                </li>
-                <li>Created visual assets using Bootstrap and Node.js, optimized for publications and non-profit events</li>
-            </ul>
-        </div>
-        <div class="exp-entry">
-            <h3><strong>Reporter Intern</strong></h3>
-            <p><em>Taiyuan Broadcast and TV station<em></p>
-            <ul>
-                <li>Compiled and published daily report summaries for the station's online outlet</li>
-                <li>Ensured accuracy of stories through rigorous fact-checking with authoritative sources</li>
-                <li>Supported staff with efficient document organization and data entry</li>
-                <li>Enhanced online news content by creating appropriate graphics and video clips</li>
-            </ul>
-        </div>
-    </section>
 </body>
 </html>

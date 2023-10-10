@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
+    <title>Contact Me</title>
     <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
     <style>
@@ -67,22 +67,24 @@
             margin-bottom: 15px;
         }
         
-        .project {
-            margin-bottom: 40px;
+        .flex-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px;
         }
-        .project h3 {
-            font-family: 'Oswald', sans-serif;
-            font-size: 1.6rem;
-            margin-bottom: 10px;
+
+        .contact-text {
+            width: 60%;
         }
-        .project p {
-            margin-bottom: 10px;
+
+        .contact-image {
+            width: 40%; 
         }
-        .project ul {
-            padding-left: 20px;
-        }
-        .project li {
-            margin-bottom: 5px;
+
+        .portrait{
+            width: 100%;
+            border-radius: 15px;
         }
 
         @media (max-width: 768px){
@@ -106,27 +108,22 @@
             <span>Yicen</span> <span>Liu</span>
         </div>
         <div class="nav__elements">
-            <a href="home.html" class="nav-link">Home</a>
-            <a href="index.html#education" class="nav-link">Education</a>
-            <a href="index.html#experience" class="nav-link">Experience</a>
-            <a href="projects.html" class="nav-link">Projects</a>
-            <a href="contact.html" class="nav-link">Contact Me</a>
+            <a href="../index.html" class="nav-link">Home</a>
+            <a href="../experience/" class="nav-link">Experience</a>
+            <a href="../projects/" class="nav-link">Projects</a>
+            <a href="../contact/" class="nav-link">Contact Me</a>
         </div>
     </nav>    
-    <section id="projects">
-        <h2>Projects</h2>
-        <article class="project">
-            <h3>Custom Encryption System</h3>
-            <p>• Designed and implemented a user-friendly Micro-service system in Python that allows users to choose between various encryption algorithms such as AES and RSA</p>
-            <p>• Developed distinct, highly-optimized modules for each encryption algorithm, with each module handling specific cipher techniques like block cipher modes of operation for AES and key pair generation for RSA</p>
-            <p>• Integrated helper functions like padding schemes PKCS#7 and secure key storage, optimizing the processes</p>
-        </article>
-        <article class="project">
-            <h3>Quantitative analysis of International Large-Scale Assessments</h3>
-            <p>• Developed Random Forest, XGBoost, and Ridge Regression models using Python and Stata for social analysis</p>
-            <p>• Applied pre-processing techniques like Standard Scaler and Min-Max Scaler for feature dimension reduction</p>
-            <p>• Built Linear Regression, Logistic Regression, and Neural Network models using R, presented at a conference</p>
-        </article>
+    <section id="contact" class="flex-container">
+        <div class="contact-text">
+            <h2>Connect with me!</h2>
+            <p>Phone Number: 608-733-9275</p>
+            <p>Email Address: <a href="mailto:vivianyicenliu@gmail.com">vivianyicenliu@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/yicen-liu-558891181/" target="_blank">Yicen Liu</a></p>
+        </div>
+        <div class="contact-image">
+            <img src="../image/myPortfolio.jpeg" alt="Portrait of Yicen Liu" class="portrait">
+        </div>
     </section>
 </body>
 </html>
