@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: #ffffff;
+            font-family: 'Ibarra Real Nova', sans-serif;
+            line-height: 1.4;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        a {
+            color: #000000;
+            text-decoration: none;
+        }
+
+        .nav {
+            background: #b1ccf5;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 15px;
+            box-shadow: -2px 4px 12px rgb(237, 237, 237);
+        }
+
+        .nav__logo {
+            color: #ffffff;
+            font-size: 1.8rem;
+            display: inline-block;
+        }
+
+        .nav__logo span {
+            display: inline-block;
+        }
+
+        .nav__elements {
+            float: right;
+        }
+
+        .nav__elements a {
+            color: #fff;
+            padding: 15px;
+            font-weight: bold;
+        }
+
+        section {
+            margin-top: 80px;
+            padding: 50px;
+        }
+
+        h2 {
+            font-family: 'Oswald', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: .02rem;
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+        
+        .project {
+            margin-bottom: 40px;
+        }
+        .project h3 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 1.6rem;
+            margin-bottom: 10px;
+        }
+        .project p {
+            margin-bottom: 10px;
+        }
+        .project ul {
+            padding-left: 20px;
+        }
+        .project li {
+            margin-bottom: 5px;
+        }
+
+        @media (max-width: 768px){
+            .flex-container {
+                flex-direction: column;
+            }
+            .contact-text, .contact-image {
+                width: 100%;
+            }
+            .portrait{
+                max-width: 300px;
+                margin: auto;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav__logo">
+            <span>Yicen</span> <span>Liu</span>
+        </div>
+        <div class="nav__elements">
+            <a href="home.html" class="nav-link">Home</a>
+            <a href="index.html#education" class="nav-link">Education</a>
+            <a href="index.html#experience" class="nav-link">Experience</a>
+            <a href="projects.html" class="nav-link">Projects</a>
+            <a href="contact.html" class="nav-link">Contact Me</a>
+        </div>
+    </nav>    
+    <section id="projects">
+        <h2>Projects</h2>
+        <article class="project">
+            <h3>Custom Encryption System</h3>
+            <p>• Designed and implemented a user-friendly Micro-service system in Python that allows users to choose between various encryption algorithms such as AES and RSA</p>
+            <p>• Developed distinct, highly-optimized modules for each encryption algorithm, with each module handling specific cipher techniques like block cipher modes of operation for AES and key pair generation for RSA</p>
+            <p>• Integrated helper functions like padding schemes PKCS#7 and secure key storage, optimizing the processes</p>
+        </article>
+        <article class="project">
+            <h3>Quantitative analysis of International Large-Scale Assessments</h3>
+            <p>• Developed Random Forest, XGBoost, and Ridge Regression models using Python and Stata for social analysis</p>
+            <p>• Applied pre-processing techniques like Standard Scaler and Min-Max Scaler for feature dimension reduction</p>
+            <p>• Built Linear Regression, Logistic Regression, and Neural Network models using R, presented at a conference</p>
+        </article>
+    </section>
+</body>
+</html>

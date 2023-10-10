@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: #f4f6f3;
+            font-family: 'Ibarra Real Nova', sans-serif;
+            line-height: 1.4;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .nav {
+            background: #b1ccf5;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 15px;
+            box-shadow: -2px 4px 12px rgb(237, 237, 237);
+        }
+
+        .nav__logo {
+            color: #ffffff;
+            font-size: 1.8rem;
+            display: inline-block;
+        }
+
+        .nav__logo span {
+            display: inline-block;
+        }
+
+        .nav__elements {
+            float: right;
+        }
+
+        .nav__elements a {
+            color: #fff;
+            padding: 15px;
+            font-weight: bold;
+        }
+
+        .exp-entry {
+            margin-bottom: 60px;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .edu-entry, .exp-entry {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        h2 {
+            font-family: 'Oswald', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: .02rem;
+            margin-bottom: 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav {
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+
+            .nav__logo, .nav__elements {
+                width: 100%;
+                text-align: center;
+            }
+
+            section {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+
+            h3 {
+                font-size: 20px;
+            }
+
+            p, li {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav__logo">
+            <span>Yicen</span> <span>Liu</span>
+        </div>
+        <div class="nav__elements">
+            <a href="home.html" class="nav-link">Home</a>
+            <a href="#education" class="nav-link">Education</a>
+            <a href="#experience" class="nav-link">Experience</a>
+            <a href="contact.html" class="nav-link">Contact Me</a>
+            <a href="projects.html" class="nav-link">Projects</a>
+        </div>
+    </nav>
+    <section id="education">
+        <h2>Education</h2>
+        <div class="edu-entry">
+            <h3><strong>Northeastern University</strong> <span>(Expected May 2025)</span></h3>
+            <p>Seattle, WA</p>
+            <p>Master of Science: Computer Science</p>
+        </div>
+        <div class="edu-entry">
+            <h3><strong>Columbia University</strong> <span>(Dec. 2022)</span></h3>
+            <p>New York, NY</p>
+            <p>Master of Education: International Education Policy Analysis</p>
+        </div>
+        <div class="edu-entry">
+            <h3><strong>University of Wisconsin Madison</strong> <span>(May 2020)</span></h3>
+            <p>Wisconsin, WI</p>
+            <p>JBA & B.S.: Strategic Communication & Global Education Policy</p>
+        </div>
+    </section>    
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="exp-entry">
+            <h3><strong>Website Developer</strong></h3>
+            <p><em>WISCAP</em> Madison, WI</p>
+            <ul>
+                <li>Performed regular maintenance and security updates on a Linux-based platform to ensure post-launch reliability</li>
+                <li>Developed responsive web pages using HTML and Bootstrap, with A/B testing for continuous optimization
+                </li>
+                <li>Created visual assets using Bootstrap and Node.js, optimized for publications and non-profit events</li>
+            </ul>
+        </div>
+        <div class="exp-entry">
+            <h3><strong>Reporter Intern</strong></h3>
+            <p><em>Taiyuan Broadcast and TV station<em></p>
+            <ul>
+                <li>Compiled and published daily report summaries for the station's online outlet</li>
+                <li>Ensured accuracy of stories through rigorous fact-checking with authoritative sources</li>
+                <li>Supported staff with efficient document organization and data entry</li>
+                <li>Enhanced online news content by creating appropriate graphics and video clips</li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>
